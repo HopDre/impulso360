@@ -7,8 +7,9 @@ body {
   background-color: #fff;
   max-width: 100vw;
 }
-h3{
-    font-family: fahkwang;
+h3,
+h4 {
+  font-family: fahkwang;
 }
 /* Header */
 .menu {
@@ -98,80 +99,385 @@ ul.menu a:hover {
 
 /* Second view-------------------------------- */
 
-.second-view{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
+.second-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
 }
-.second-view .second-left{
-    width: 50%;
+.second-view .second-left {
+  width: 50%;
 }
-.second-left h3{
-    font-size: 2em;
+.second-left h3 {
+  font-size: 2em;
 }
-.second-left p{
-    margin: 20px 0;
+.second-left p {
+  margin: 20px 0;
 }
 
 /* Third view----------------------- */
-.third-view{
-    background-color: #333333;
-    color: #fff;
+.third-view {
+  background-color: #333333;
+  color: #fff;
 }
-.third-view h3{
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    padding-top: 20px;
+.third-view h3 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
-.third-view p{
-    text-align: center;
-    padding-bottom: 20px;
+.third-view p {
+  text-align: center;
+  padding-bottom: 20px;
 }
-.servicios{
-    background-color: black;
-    padding-bottom: 40px;
+.servicios {
+  background-color: black;
+  padding-bottom: 40px;
 }
-.contenedores-servicios{
-    display: flex;
-    margin-top: 80px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.servicios h3 {
+  color: #b10c72;
 }
-.servicio-individual{
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
+.contenedores-servicios {
+  display: flex;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.servicio-individual img{
-    width: 150px;
+.servicio-individual {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.servicio-individual h3{
-    font-size: 1.3em;
+.servicio-individual img {
+  width: 150px;
 }
-.servicio-individual p{
-    padding: 20px;
+.servicio-individual h3 {
+  font-size: 1.3em;
+  color: #fff;
 }
-.contenedores-servicios .btn-first{
-    margin-top: 40px;
-    font-size: 1.2em;
+.servicio-individual p {
+  padding: 20px;
+}
+.contenedores-servicios .btn-first {
+  margin-top: 40px;
+  font-size: 1.2em;
 }
 
 /* Cmr-------------------------------- */
-.cmr{
-    display: flex;
-    margin: 40px 0;
-    padding: 0 40px;
-    align-items: center;
+.cmr {
+  display: flex;
+  margin: 40px 0;
+  padding: 0 40px;
+  align-items: center;
 }
-.right-cmr{
-    width: 50%;
-    padding-left: 40px;
+.right-cmr {
+  width: 50%;
+  padding-left: 40px;
 }
-.right-cmr h3{
-    font-size: 2em;
+.right-cmr h3 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+/* Nosotros--------------------------------- */
+.nosotros {
+  background: url(/assets/e.jpg) no-repeat;
+  background-size: cover;
+  padding: 20px 40px;
+}
+.contenido-nosotros {
+  background-color: rgba(0, 0, 0, 0.774);
+  padding: 20px 40px;
+}
+.contenido-nosotros h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.contenido-uno {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.contenido-uno h4 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* --------------------------------------- */
+
+.contacto {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  margin-top: 80px;
+}
+.contacto .contacto-left {
+  width: 50%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.contacto-left h3 {
+  color: #1e5db2;
+  font-size: 1.3em;
+}
+.contacto-left p {
+  font-size: 1em;
+}
+.formulario {
+  width: 50%;
+  background-color: black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+}
+.formulario .btn-first{
+    text-decoration: none;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    padding: 10px 25px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 40px;
+    display: inline;
+    width: 200px;
+    margin-top: 20px;
+}
+.formulario .btn-first:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+.contacto-parrafo {
+  text-align: center;
+  margin: 40px auto;
+  font-weight: 600;
+  width: 80%;
+  font-size: 1.2em;
+}
+.icons {
+  color: #fff;
+}
+.iconos {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+.iconos img {
+  width: 50px;
+}
+footer {
+  padding: 10px 40px;
+  font-size: 0.8em;
+}
+
+.slider {
+  width: 200px; /* Ancho de cada imagen */
+  overflow: hidden; /* Oculta el contenido fuera del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.slide {
+  float: left; /* Hace que las imágenes se apilen horizontalmente */
+}
+
+.sli {
+  background-color: black;
+  padding: 80px 0;
+  margin-top: 20px;
+}
+.texto-slider {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+
+/* Responsive----------------------------- */
+
+@media (max-width: 950px) {
+    /* Header */
+  .menu .logo img {
+    width: 100px;
+  }
+  ul.menu a {
+    padding: 15px 5px;
+    font-size: 0.5em;
+  }
+
+  /* Primera vista */
+
+  .first-view {
+    padding: 0 20px;
+    font-size: 1.2em;
+  }
+  .first-view .text {
+    width: 90%;
+  }
+  
+  /* Second view-------------------------------- */
+  
+  .second-view {
+    flex-direction: column;
+  }
+  .second-view .second-left {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .second-left h3 {
+    font-size: 1.5em;
+  }
+  .second-left p{
     margin-bottom: 40px;
+  }
+  .second-right img{
+    width: 95%;
+    margin-top: 40px;
+  }
+  
+  /* Third view----------------------- */
+  .third-view h3 {
+    font-size: 1.8em;
+  }
+  .third-view p {
+    padding-bottom: 10px;
+  }
+  .contenedores-servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicio-individual {
+    width: 90%;
+  }  
+  /* Cmr-------------------------------- */
+  .cmr {
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-cmr {
+    width: 90%;
+    padding: 0;
+  }
+  .right-cmr h3 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .left-cmr{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .left-cmr img{
+    width: 90%;
+  }
+  
+  /* Nosotros--------------------------------- */
+  .nosotros {
+    background: url(/assets/e.jpg) no-repeat;
+    background-size: cover;
+    padding: 10px 10px;
+  }
+  /* --------------------------------------- */
+  
+  /* --------------------------------------- */
+  .contacto-parrafo h3 {
+    margin: 20px 10px;
+    font-size: 1em;
+    text-align: center;
+  }
+  .contacto {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .contacto .contacto-left {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .contacto-left p {
+    font-size: 1em;
+  }
+  .formulario {
+    width: 100%;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+  }
+  .btn-envio {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #b10c72;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    width: 200px;
+  }
+  .icons {
+    color: #fff;
+  }
+  .iconos {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+  }
+  .iconos img {
+    width: 50px;
+  }
+  footer {
+    padding: 10px 40px;
+    font-size: 0.8em;
+  }
+
+
+
+
+
+
+
+
+
+  .slider {
+    width: 100%; /* Utiliza el 100% del ancho disponible en dispositivos móviles */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+  }
+
+  .slide {
+    display: inline-block; /* Muestra las imágenes en línea para que se centren */
+    float: none; /* Anula la propiedad float */
+  }
 }
