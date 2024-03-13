@@ -131,11 +131,13 @@ ul.menu a:hover {
 }
 .servicios{
     background-color: black;
+    padding-bottom: 40px;
 }
 .contenedores-servicios{
     display: flex;
     margin-top: 80px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 .servicio-individual{
     width: 33%;
@@ -152,4 +154,24 @@ ul.menu a:hover {
 }
 .servicio-individual p{
     padding: 20px;
+}
+.contenedores-servicios .btn-first{
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+
+/* Cmr-------------------------------- */
+.cmr{
+    display: flex;
+    margin: 40px 0;
+    padding: 0 40px;
+    align-items: center;
+}
+.right-cmr{
+    width: 50%;
+    padding-left: 40px;
+}
+.right-cmr h3{
+    font-size: 2em;
+    margin-bottom: 40px;
 }
