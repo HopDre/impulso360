@@ -11,6 +11,12 @@ h3,
 h4 {
   font-family: fahkwang;
 }
+h3{
+  text-align: center;
+}
+p{
+  font-family: Helvetica;
+}
 /* Header */
 .menu {
   z-index: 10;
@@ -114,6 +120,23 @@ ul.menu a:hover {
 .second-left p {
   margin: 20px 0;
 }
+/* Second view dos-------------------------------- */
+
+.second-view-dos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+}
+.second-view-dos .second-dos-left {
+  width: 50%;
+}
+.second-dos-right{
+  width: 50%;
+}
+.second-dos-right h3 {
+  font-size: 2em;
+}
 
 /* Third view----------------------- */
 .third-view {
@@ -135,7 +158,7 @@ ul.menu a:hover {
   padding-bottom: 40px;
 }
 .servicios h3 {
-  color: rgb(141, 20, 141);
+  color: #ff1a8f;
 }
 .contenedores-servicios {
   display: flex;
@@ -164,7 +187,15 @@ ul.menu a:hover {
   margin-top: 40px;
   font-size: 1.2em;
 }
-
+.servicios-abajo{
+  display: flex;
+  background-color: #fff;
+  color: black;
+  padding-top: 40px;
+}
+.servicios-abajo .servicio-individual h3{
+  color: black;
+}
 /* Cmr-------------------------------- */
 .cmr {
   display: flex;
@@ -183,30 +214,65 @@ ul.menu a:hover {
 
 /* Nosotros--------------------------------- */
 .nosotros {
-  background: url(/assets/e.jpg) no-repeat;
   background-size: cover;
   padding: 20px 40px;
 }
 .contenido-nosotros {
-  background-color: rgba(0, 0, 0, 0.774);
   padding: 20px 40px;
-}
-.contenido-nosotros h3 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
   color: #fff;
 }
 .contenido-uno {
   margin-bottom: 20px;
-  color: #fff;
+  color: black;
+  width: 40%;
+  padding: 0 40px;
 }
 .contenido-uno h4 {
   font-size: 1.4em;
   margin-bottom: 10px;
-  color: rgb(141, 20, 141);
+  color: black;
+}
+.nosotros-titulo{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nosotros-titulo h4{
+  margin-left: 20px;
+}
+.nosotros-titulo img{
+  width: 40px;
 }
 .nosotros-dos{
   background-color: black;
+}
+.nosotros-dos .contenido-nosotros{
+  display: flex;
+  flex-direction: column;
+}
+.nosotros-dos .contenido-nosotros h3{
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+.nosotros-dos .contenido-nosotros h4{
+  color: #b10c72;
+}
+.nosotros-dos .contenido-nosotros p{
+  color: #fff;
+}
+.nosotros-dos .contenido-nosotros .contenido-uno{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+span{
+  color: #ff1a8f;
+  background-color: #fff;
+  padding: 2px;
 }
 
 /* --------------------------------------- */
@@ -400,8 +466,6 @@ footer {
   
   /* Nosotros--------------------------------- */
   .nosotros {
-    background: url(/assets/e.jpg) no-repeat;
-    background-size: cover;
     padding: 10px 10px;
   }
   /* --------------------------------------- */
@@ -467,14 +531,6 @@ footer {
     font-size: 0.8em;
   }
 
-
-
-
-
-
-
-
-
   .slider {
     width: 100%; /* Utiliza el 100% del ancho disponible en dispositivos móviles */
     text-align: center; /* Centra el contenido dentro del contenedor */
@@ -483,5 +539,65 @@ footer {
   .slide {
     display: inline-block; /* Muestra las imágenes en línea para que se centren */
     float: none; /* Anula la propiedad float */
+  }
+
+  .second-view-dos {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .second-view-dos .second-dos-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .second-view-dos .second-dos-left img{
+    width: 90%;
+  }
+  .second-dos-right{
+    width: 90%;
+  }
+  .second-dos-right h3 {
+    font-size: 1.5em;
+  }
+
+  /* --------------------------------- */
+  .servicios-abajo{
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios-abajo .servicio-individual h3{
+    color: black;
+  }
+  /* ----------------------- */
+
+  .contenido-nosotros {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  .contenido-uno {
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .contenido-uno h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: black;
+  }
+  .nosotros-titulo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .nosotros-titulo h4{
+    margin-left: 20px;
+  }
+  .nosotros-titulo img{
+    width: 40px;
   }
 }
