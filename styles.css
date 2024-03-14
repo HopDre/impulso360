@@ -25,11 +25,11 @@ p{
   justify-content: center;
 }
 .menu .logo img {
-  width: 200px;
+  width: 100px;
 }
 ul.menu {
   list-style: none;
-  background-color: black;
+  background-color: #fff;
   position: fixed;
   width: 100%;
 }
@@ -38,7 +38,7 @@ ul.menu li {
 }
 ul.menu a {
   display: block;
-  color: #fff;
+  color: black;
   text-decoration: none;
   padding: 25px 20px;
   font-weight: 600;
@@ -196,21 +196,6 @@ ul.menu a:hover {
 .servicios-abajo .servicio-individual h3{
   color: black;
 }
-/* Cmr-------------------------------- */
-.cmr {
-  display: flex;
-  margin: 40px 0;
-  padding: 0 40px;
-  align-items: center;
-}
-.right-cmr {
-  width: 50%;
-  padding-left: 40px;
-}
-.right-cmr h3 {
-  font-size: 2em;
-  margin-bottom: 40px;
-}
 
 /* Nosotros--------------------------------- */
 .nosotros {
@@ -221,7 +206,8 @@ ul.menu a:hover {
   padding: 20px 40px;
   display: flex;
   flex-wrap: wrap;
-  color: #fff;
+  color: black;
+  background-color: #fff;
 }
 .contenido-uno {
   margin-bottom: 20px;
@@ -253,7 +239,7 @@ ul.menu a:hover {
   flex-direction: column;
 }
 .nosotros-dos .contenido-nosotros h3{
-  color: #fff;
+  color: black;
   font-size: 2em;
   margin-bottom: 40px;
 }
@@ -261,7 +247,7 @@ ul.menu a:hover {
   color: #b10c72;
 }
 .nosotros-dos .contenido-nosotros p{
-  color: #fff;
+  color: black;
 }
 .nosotros-dos .contenido-nosotros .contenido-uno{
   width: 100%;
@@ -389,7 +375,7 @@ footer {
 @media (max-width: 950px) {
     /* Header */
   .menu .logo img {
-    width: 100px;
+    width: 50px;
   }
   ul.menu a {
     padding: 15px 5px;
@@ -440,29 +426,6 @@ footer {
   .servicio-individual {
     width: 90%;
   }  
-  /* Cmr-------------------------------- */
-  .cmr {
-    padding: 0 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .right-cmr {
-    width: 90%;
-    padding: 0;
-  }
-  .right-cmr h3 {
-    font-size: 1.8em;
-    text-align: center;
-  }
-  .left-cmr{
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .left-cmr img{
-    width: 90%;
-  }
   
   /* Nosotros--------------------------------- */
   .nosotros {
@@ -543,7 +506,7 @@ footer {
 
   .second-view-dos {
     display: flex;
-    flex-direction: column;
+    flex-direction:column-reverse;
     padding: 40px;
   }
   .second-view-dos .second-dos-left {
@@ -554,6 +517,7 @@ footer {
   }
   .second-view-dos .second-dos-left img{
     width: 90%;
+    margin-top: 40px;
   }
   .second-dos-right{
     width: 90%;
