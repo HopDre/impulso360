@@ -335,13 +335,13 @@ form input {
   margin: 40px auto;
   font-weight: 600;
   width: 80%;
-  font-size: 1.2em;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .contacto-parrafo img{
-  width: 60%;
+  width: 45%;
 }
 .icons {
   color: #fff;
