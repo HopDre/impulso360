@@ -119,6 +119,11 @@ ul.menu a:hover {
 }
 .second-left p {
   margin: 20px 0;
+  margin-bottom: 40px;
+}
+.second-view .btn-first{
+  text-align: center;
+  font-size: 1.3em;
 }
 /* Second view dos-------------------------------- */
 
@@ -367,6 +372,15 @@ footer {
   margin-bottom: 40px;
 }
 
+.texto-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo-nosotros h3{
+  font-size: 2em;
+  padding: 40px 0;
+}
 
 
 
